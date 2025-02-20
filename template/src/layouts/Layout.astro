@@ -1,0 +1,144 @@
+---
+import Head from '../components/head/Head.astro';
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const {title = 'example', description = 'example description'} = Astro.props as Props;
+---
+
+<!doctype html>
+<html lang="cs">
+<Head title={title} description={description}/>
+<body>
+<slot/>
+</body>
+</html>
+<style is:global>
+    :root {
+        --color1: #324a99;
+        /* space for colors and other variables */
+    }
+
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 1200px) {
+        html {
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        html {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        html {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+</style>

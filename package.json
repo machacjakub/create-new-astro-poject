@@ -1,0 +1,14 @@
+{
+  "name": "create-new-astro-poject",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "CLI tool to create an Astro template",
+  "bin": {
+    "create-astro-template": "bin/create-astro-template.js"
+  },
+  "license": "ISC",
+  "keywords": ["astro", "website", "template", "npx install"],
+  "dependencies": {
+    "fs-extra": "^11.3.0"
+  }
+}
