@@ -8,6 +8,7 @@
   },
   "license": "ISC",
   "keywords": ["astro", "website", "template", "npx install"],
+  "repository": "https://github.com/machacjakub/create-new-astro-poject",
   "dependencies": {
     "fs-extra": "^11.3.0"
   }
