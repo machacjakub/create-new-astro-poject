@@ -1,14 +1,22 @@
 {
   "name": "create-new-astro-poject",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to create an Astro template",
   "bin": {
     "create-astro-template": "bin/create-astro-template.js"
   },
   "license": "ISC",
-  "keywords": ["astro", "website", "template", "npx install"],
-  "repository": "https://github.com/machacjakub/create-new-astro-poject",
+  "keywords": [
+    "astro",
+    "website",
+    "template",
+    "npx install"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machacjakub/create-new-astro-poject.git"
+  },
   "dependencies": {
     "fs-extra": "^11.3.0"
   }
